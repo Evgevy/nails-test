@@ -1,0 +1,60 @@
+mixin portfolio(modifier)
+  section.portfolio&attributes(attributes)
+    .portfolio__content 
+      +title('Портфолио')
+      .portfolio__slider
+        .portfolio__slider-buttons 
+          button(type="button").portfolio__button-prev
+            include img/prev.svg
+          button(type="button").portfolio__button-next
+            include img/next.svg
+        .portfolio__items 
+          .portfolio__item 
+            img(src="img/stemp.png" alt="Дизайн Стемпинг").portfolio__img
+            .portfolio__info 
+              h3.portfolio__title Дизайн “Стемпинг”
+              p.portfolio__text Техника декорирования ногтей, при которой рисунок отпечатывается со специальной пластины на ноготки при помощи штампа.
+              .portfolio__buttons
+                button(type="button").portfolio__btn Хочу себе такой
+                button(type="button").portfolio__btn Посмотреть все услуги
+          .portfolio__item 
+            img(src="img/draft.png" alt="Дизайн Рисунок").portfolio__img
+            .portfolio__info 
+              h3.portfolio__title Дизайн “Рисунок”
+              p.portfolio__text Продолжает набирать популярность, многие модницы отдают ему предпочтение
+              .portfolio__buttons
+                button(type="button").portfolio__btn Хочу себе такой
+                button(type="button").portfolio__btn Посмотреть все услуги
+          .portfolio__item 
+            img(src="img/slider.png" alt="Дизайн Слайдеры").portfolio__img
+            .portfolio__info 
+              h3.portfolio__title Дизайн “Слайдеры”
+              p.portfolio__text Наклейки на водной основе, что легко переносятся на ноготь
+              .portfolio__buttons
+                button(type="button").portfolio__btn Хочу себе такой
+                button(type="button").portfolio__btn Посмотреть все услуги
+          .portfolio__item 
+            img(src="img/crystal.png" alt="Дизайн Стразы").portfolio__img
+            .portfolio__info 
+              h3.portfolio__title Дизайн “Стразы”
+              p.portfolio__text Прекрасно дополнят слайдеры для дизайна ногтей, блестки, камни для ногтей
+              .portfolio__buttons
+                button(type="button").portfolio__btn Хочу себе такой
+                button(type="button").portfolio__btn Посмотреть все услуги
+          .portfolio__item 
+            img(src="img/scotch.png" alt="Дизайн Фольга-скотч").portfolio__img
+            .portfolio__info 
+              h3.portfolio__title Дизайн “Фольга-скотч”
+              p.portfolio__text Представляет собой узкую ленту, которой легко придать нужную форму и просто клеить на ногти не только как дизайн, но и в качестве трафарета
+              .portfolio__buttons
+                button(type="button").portfolio__btn Хочу себе такой
+                button(type="button").portfolio__btn Посмотреть все услуги
+          .portfolio__item 
+            img(src="img/grout.png" alt="Дизайн Затирка").portfolio__img
+            .portfolio__info 
+              h3.portfolio__title Дизайн “Затирка”
+              p.portfolio__text Блестящий пигмент в мелком порошке с пудровой консистенцией, он втирается в верхнее покрытие без липкого слоя
+              .portfolio__buttons
+                button(type="button").portfolio__btn Хочу себе такой
+                button(type="button").portfolio__btn Посмотреть все услуги
+

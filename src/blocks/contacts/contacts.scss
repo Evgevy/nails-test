@@ -1,0 +1,125 @@
+.contacts {
+    background-image: url(../img/bg-black.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 250px;
+    padding-top: 741px;
+    margin-top: -500px;
+    &__content {
+        max-width: 1220px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px 0 25px;
+        border-left: 2px dashed #2E1E25;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-family: 'Amatic SC';
+        font-weight: 700;
+        font-size: px-to-em(50);
+        line-height: 126%;
+        color: #2E1E25;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-family: 'Lato', sans-serif;
+        font-size: px-to-em(24);
+        line-height: 137%;
+        opacity: 0.5;
+        color: #2E1E25;
+        margin-bottom: 40px;
+    }
+
+    &__social {
+        padding-top: 66px;
+        display: flex;
+    }
+
+    &__icons,
+    &__names,
+    &__number {
+        display: flex;
+        flex-direction: column;
+        gap: 40px 0;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: px-to-em(24);
+        line-height: 137%;
+        color: #2E1E25;
+        justify-content: space-around;
+        
+    }
+
+    &__icons,
+    &__names {
+        border-right: 2px dashed #2E1E25;
+    }
+
+    &__icons {
+        padding-right: 20px;
+    }
+
+    &__names,
+    &__number {
+        padding: 0 20px;
+    }
+
+    &__icons {
+        &--two {
+            border: none;
+            flex-direction: row;
+            margin: 85px 0;
+            justify-content: start;
+            align-items: center;
+            padding: 0;
+        }
+    }
+    
+    &__link-icon,
+    &__link-inst {
+        border-right: 2px dashed #2E1E25;
+    }
+
+    &__link-icon {
+        padding-right: 20px;
+    }
+
+    &__link-inst,
+    &__email {
+        padding: 0 20px;
+    }
+
+    &__link-vk {
+        width: 218px;
+        height: 48px;
+        background: rgba(46, 30, 37, 0.8);
+        border-radius: 30px;
+        font-family: 'Amatic SC';
+        font-weight: 700;
+        font-size: px-to-em(24);
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        color: #EEEEEE;
+    }
+
+    &__more {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    &__img {
+        margin-top: 30px;
+    }
+
+}

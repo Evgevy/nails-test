@@ -1,0 +1,30 @@
+mixin master(modifier)
+  section.master&attributes(attributes)
+    .master__content 
+      .master__info 
+        .master__social
+          a(href="#!").master__link 
+            include img/inst.svg
+          a(href="#!").master__link  
+            include img/vk.svg
+        h1.master__title Дарья Теплухина
+        p.master__text мастер маникюра
+        button.master__btn Записаться
+          include img/btn.svg
+      .master__slider 
+        .master__items 
+          .master__item 
+            h2.master__caption Комплексный маникюр
+            img(src="img/slide1.png" alt="Комплексный маникюр").master__img
+          .master__item 
+            h2.master__caption Снятие/покрытие
+            img(src="img/slide1.png" alt="Комплексный маникюр").master__img
+          .master__item 
+            h2.master__caption Дизайн
+            img(src="img/slide1.png" alt="Комплексный маникюр").master__img
+          .master__item 
+            h2.master__caption Выгодное предложение
+            img(src="img/slide1.png" alt="Комплексный маникюр").master__img
+          .master__item 
+            h2.master__caption Портфолио
+            img(src="img/slide1.png" alt="Комплексный маникюр").master__img

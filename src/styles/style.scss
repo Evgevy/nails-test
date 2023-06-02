@@ -1,0 +1,68 @@
+@import 'mixins';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+/* Plugins */
+
+
+
+/* Blocks */
+
+body, ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+body {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  
+}
+
+
+
+
+
+
+@import './src/blocks/header/header';
+@import './src/blocks/master/master';
+@import './src/blocks/about/about';
+@import './src/blocks/title/title';
+@import './src/blocks/image/image';
+@import './src/blocks/services/services';
+@import './src/blocks/form/form';
+@import './src/blocks/portfolio/portfolio';
+@import './src/blocks/contacts/contacts';
+@import './src/blocks/footer/footer';

@@ -1,0 +1,22 @@
+mixin form(modifier)
+  section.form&attributes(attributes)
+    .form__content
+      form.form__form
+        h2.form__title Записаться на сеанс
+        input(type="text" placeholder="Как вас зовут").form__name
+        input(type="tel" placeholder="Номер телефона").form__phone
+        button(type="submit").form__btn Записаться
+      .form__plus 
+        .form__item 
+          include img/home.svg
+          p.form__text Уютная атмосфера
+        .form__item 
+          include img/tree.svg
+          p.form__text Аккуратное и бережное отношение к рукам
+        .form__item
+          include img/watch.svg 
+          p.form__text Работаю быстро и качетсвенно
+        .form__item 
+          include img/men.svg
+          p.form__text Проконсультирую по интересующим вопросам
+        

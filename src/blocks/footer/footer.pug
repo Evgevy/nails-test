@@ -1,0 +1,24 @@
+mixin footer(modifier)
+  footer.footer&attributes(attributes)
+    .footer__content 
+      .footer__inner 
+        .footer__nav 
+          ul.footer__list 
+            li.footer__item 
+              a(href="#!").footer__link Главная
+            li.footer__item 
+              a(href="#!").footer__link Обо мне
+            li.footer__item 
+              a(href="#!").footer__link Услуги
+            li.footer__item 
+              a(href="#!").footer__link Портфолио
+            li.footer__item
+              a(href="#!").footer__link Контакты
+        h2.footer__title Дарья Теплухина
+        p.footer__text мастер маникюра
+        button(type="button").footer__btn Записаться
+        .footer__social 
+          a(href="#!")
+            include img/inst.svg 
+          a(href="#!")
+            include img/vk.svg

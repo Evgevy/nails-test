@@ -1,0 +1,33 @@
+mixin contacts(modifier)
+  section.contacts&attributes(attributes)
+    .contacts__content 
+      .contacts__inner 
+        .contacts__questions 
+          h2.contacts__title Остались вопросы? 
+          p.contacts__text Напишите мне и я обязательно отвечу 
+          .contacts__social
+            .contacts__icons
+              a(href="#!" target='_blank') 
+                include img/telega.svg
+              a(href="#!" target='_blank')
+                include img/whatsapp.svg 
+            .contacts__names 
+              a(href="#!" target='_blank').contacts__link Telegram
+              a(href="#!" target='_blank').contacts__link WhatsApp 
+            .contacts__number 
+              a(href='tel:+89999999999' target='_blank').contacts__phone 8-999-999-99-99
+          .contacts__icons.contacts__icons--two
+            a(href="#!" target='_blank').contacts__link-icon
+              include img/inst.svg 
+            a(href="#!" target='_blank').contacts__link-inst Instagram
+            a(href="mailto:inst.com" target='_blank').contacts__email www.inst.com
+          p.contacts__text Так же со мной можно связаться через:
+          a(href="#!" target='_blank').contacts__link-vk Вконтакте
+            include img/vk.svg
+        .contacts__more 
+          h2.contacts__title А  нахожусь я здесь
+          p.contacts__text С-Петербург, ул. Невский проспект 14
+          img(src="img/map.png" alt="Адрес на карте").contacts__img
+
+
+

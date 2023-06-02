@@ -1,0 +1,21 @@
+mixin services(modifier)
+  section.services&attributes(attributes)
+    .services__content 
+      +title('Услуги')
+      .services__elements
+        .services__element
+          .services__name Снятие, комбинированный маникюр, покрытие
+          .services__line 
+          .services__price 1000
+        .services__element
+          .services__name Снятие (не мое) без дальнейшего покрытия
+          .services__line 
+          .services__price 300
+        .services__element
+          .services__name Комбинированный маникюр (без покрытия)
+          .services__line 
+          .services__price 600
+        .services__element
+          .services__name Дизайн (за один пальчик)
+          .services__line 
+          .services__price 50

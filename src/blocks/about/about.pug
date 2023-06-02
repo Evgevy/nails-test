@@ -1,0 +1,38 @@
+mixin about(modifier)
+  section.about&attributes(attributes)
+    .about__content 
+      .about__tabs 
+        button(type="button" data-tab="tab-1").about__btn.about__btn--active
+          include img/arrow-prev.svg
+        button(type="button" data-tab="tab-2").about__btn
+          include img/arrow-next.svg
+      .about__info.about__info--active(id="tab-1")
+        .about__tab
+          +title('Обо мне')
+          p.about__text Я начала заниматься маникюром год назад и это было просто хобби. Но через какое то время я влюбилась в это дело и ушла в него с головой. 
+          p.about__text.about__text--one Я помогу сделать твои ручки  аккуратными и красивыми
+          p.about__text.about__text--two Больше меня и моей жизни 
+        .about__box
+          .about__images
+            img(src="img/foto.png" alt="Фото работ").about__img
+            img(src="img/foto.png" alt="Фото работ").about__img
+          a(href="#!").about__link В моем инстаграме
+            include img/inst.svg
+      .about__info(id="tab-2")
+        .about__tab 
+          +title('Специализация')
+          ul.about__list 
+            li.about__item Комбинированный маникюр
+            li.about__item Снятие / покрытие 
+            li.about__item Дизайн 
+          p.about__text.about__text--one Посоветую какой дизайн сделать, какую форму или длину подобрать индивидуально исходя из особенностей вашей ногтевой пластины.
+          .about__buttons 
+            button(type="button").about__button Записаться
+            button(type="button").about__button Отзывы о работе
+          button(type="button").about__button-big Портфолио
+        .about__picture 
+          .about__images
+            img(src="img/small.png" alt="Фото работ").about__img
+            img(src="img/small.png" alt="Фото работ").about__img
+          img(src="img/dark.png" alt="Фото работ").about__img-big
+

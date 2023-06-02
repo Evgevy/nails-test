@@ -1,0 +1,112 @@
+.portfolio {
+    padding-left: 10px;
+    &__content {
+        max-width: 1220px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px 0 25px;
+        border-left: 2px dashed #2E1E25;
+    }
+
+    &__slider {
+        margin-top: 60px;
+        position: relative;
+    }
+
+    &__slider-buttons  {
+        display: flex;
+        gap: 0 40px;
+        position: absolute;
+        right: 0;
+        top: -95px;
+    }
+
+    &__button-prev,
+    &__button-next {
+        svg {
+            transition: .3s;
+        }
+    }
+
+    &__button-prev:hover,
+    &__button-next:hover {
+        svg {
+            transform: scale(1.2);
+            path {
+                opacity: 1;
+            }
+        }
+    }
+
+    .slick-slide {
+        display: flex;
+        gap: 0 40px;
+    }
+
+    &__title {
+        font-family: 'Amatic SC';
+        font-weight: 700;
+        font-size: px-to-em(50);
+        line-height: 126%;
+        color: #2E1E25;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-family: 'Lato', sans-serif;
+        font-size: px-to-em(22);
+        line-height: 150%;
+        color: #2E1E25;
+        margin-bottom: 84px;
+        min-height: 160px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 40px 0;
+    }
+
+    &__btn {
+        width: 355px;
+        height: 58px;
+        border-radius: 40px;
+        background-color: #F6ACCB;
+        font-family: 'Amatic SC';
+        font-weight: 700;
+        font-size: px-to-em(34);
+        line-height: 97%;
+        color: #2E1E25;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    &__btn::after {
+        content: url(../img/heart.svg);
+    }
+
+    &__btn:last-child {
+        background-color: #E9B8D7;
+    }
+
+    &__btn:last-child::after {
+        content: url(../img/vector.svg);
+    }
+
+    &__buttons-tabs {
+        position: absolute;
+        display: flex;
+        gap: 0 10px;
+    }
+
+    &__btn-tab {
+        width: 60px;
+        height: 12px;
+        background-color: #000;
+        border-radius: 3px;
+    }
+
+    
+}
