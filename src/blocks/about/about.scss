@@ -1,7 +1,7 @@
 .about {
-    
     padding-left: 10px;
     margin-bottom: 200px;
+    
     &__content {
         max-width: 1220px;
         width: 100%;
@@ -28,10 +28,6 @@
         right: 550px;
         z-index: 1;
     }
-
-    /*&__tab {
-        width: 500px;
-    }*/
 
     &__btn {
         svg {
@@ -67,10 +63,6 @@
     &__small {
         display: none;
     }
-
-    /*.title {
-        margin-bottom: 60px;
-    }*/
 
     &__text,
     &__link {
@@ -250,7 +242,7 @@
     }
 
     @media screen and (max-width: 1000px) {
-        margin-bottom: 100px;
+        margin-bottom: 150px;
         &__tabs {
             display: none;
         }
@@ -321,14 +313,12 @@
     
         &__button-big {
             max-width: 400px;
-
         }
 
         &__images {
             width: 50%;
             flex-direction: column;
             align-self: center;
-            
         }
 
 
@@ -346,17 +336,23 @@
                 display: none;
             }
         }
-
-        
     }
 
     @media screen and (max-width: 768px) {
-        
-        &__img-big {
-            display: none;
+        .title {
+            font-size: px-to-em(30);
         }
 
-        &__picture {
+        &__text {
+            font-size: px-to-em(16);
+        }
+
+        &__item {
+            font-size: px-to-em(16);
+        }
+
+        
+        &__img-big {
             display: none;
         }
 
@@ -366,12 +362,6 @@
                 display: block;
             }
         }
-
-       
-
-        /*&__box {
-            gap: 20px;
-        }*/
 
         &__images {
             flex-direction: column;
@@ -381,35 +371,9 @@
     }
 
     @media screen and (max-width: 655px) {
-        .title {
-            font-size: px-to-em(30);
+        &__picture {
+            display: none;
         }
-
-        &__text {
-            font-size: px-to-em(16);
-        }
-
-        /*&__small {
-            display: flex;
-            flex-direction: column;
-            top: 20px;
-            left: 300px;
-        }*/
-
-        &__item {
-            font-size: px-to-em(16);
-        }
-
-        /*&__images {
-            width: 100%;
-        }
-
-        &__img {
-            
-            &--next {
-                display: block;
-            }
-        }*/
 
         &__button,
         &__button-big {

@@ -33,11 +33,19 @@
     &__price {
         font-weight: 700;
         display: flex;
-        gap: 0 11px;
+        gap: 0 10px;
+        justify-content: center;
     }
 
     &__price::after {
         content: url(../img/price.svg);
+    }
+
+    &__price {
+        svg {
+            width: 10px;
+            height: 10px;
+        }
     }
 
     &__line {
@@ -48,13 +56,118 @@
 
     &__element:first-child {
         position: relative;
-        
+        svg {
+            position: absolute;
+            top: -25px;
+            left: -100px;
+        }
     }
 
-    &__element:first-child::before {
-        content: url(../img/discount.png);
-        position: absolute;
-        left: -100px;
-        padding-left: 10px;
+    @media screen and (max-width: 1000px) {
+        .title {
+            font-size: px-to-em(40);
+        }
+
+        &__name {
+            font-size: px-to-em(18);
+        }
+    
+        &__line {
+            display: none;
+        }
+
+        &__elements {
+            margin: 50px 0 0;
+            position: relative;
+        }
+
+        &__element::after {
+            content: '';
+            border-right: 2px solid rgba(0, 0, 0, 0.4);
+            height: 15px;
+            position: absolute;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            left: 420px;
+            margin-bottom: 40px;
+        }
+
+        &__element {
+            justify-content: space-between;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+        }
+        
+        &__element:first-child {
+            svg {
+                top: -25px;
+                left: 89%;
+            }
+        }
+       
+        &__price {
+            margin-right: 200px;
+        }
+    }
+
+    @media screen and (max-width: 855px) {
+        &__price {
+            margin-right: 100px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .title {
+            font-size: px-to-em(30);
+        }
+
+        &__name,
+        &__price {
+            flex-shrink: 1;
+            font-size: px-to-em(16);
+        }
+
+        &__element::after {
+           border: none;
+        }
+
+        &__element {
+            justify-content: space-between;
+            border-bottom: none;
+        }
+
+        &__price {
+            margin-right: 0;
+        }
+
+        &__name {
+            padding-right: 30px;
+        }
+
+        &__element:first-child {
+            svg {
+                width: 60px;
+                height: 60px;
+                top: -15px;
+                left: 370px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 560px) {
+        &__element:first-child {
+            svg {
+                width: 50px;
+                height: 50px;
+                top: -10px;
+                left: -50px;
+                transform: rotate(-45deg);
+               
+            }
+        }
+
+        &__elements {
+            margin-left: 30px;
+        }
+
     }
 }
