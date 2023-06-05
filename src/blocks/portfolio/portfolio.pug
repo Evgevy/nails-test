@@ -10,7 +10,8 @@ mixin portfolio(modifier)
             include img/next.svg
         .portfolio__items 
           .portfolio__item 
-            img(src="img/stemp.png" alt="Дизайн Стемпинг").portfolio__img
+            .portfolio__pull
+              +foto
             .portfolio__info 
               h3.portfolio__title Дизайн “Стемпинг”
               p.portfolio__text Техника декорирования ногтей, при которой рисунок отпечатывается со специальной пластины на ноготки при помощи штампа.
@@ -18,14 +19,15 @@ mixin portfolio(modifier)
                 button(type="button").portfolio__btn Хочу себе такой
                 button(type="button").portfolio__btn Посмотреть все услуги
           .portfolio__item 
-            img(src="img/draft.png" alt="Дизайн Рисунок").portfolio__img
+            .portfolio__pull
+              +foto
             .portfolio__info 
               h3.portfolio__title Дизайн “Рисунок”
               p.portfolio__text Продолжает набирать популярность, многие модницы отдают ему предпочтение
               .portfolio__buttons
                 button(type="button").portfolio__btn Хочу себе такой
                 button(type="button").portfolio__btn Посмотреть все услуги
-          .portfolio__item 
+          //.portfolio__item 
             img(src="img/slider.png" alt="Дизайн Слайдеры").portfolio__img
             .portfolio__info 
               h3.portfolio__title Дизайн “Слайдеры”
@@ -33,7 +35,7 @@ mixin portfolio(modifier)
               .portfolio__buttons
                 button(type="button").portfolio__btn Хочу себе такой
                 button(type="button").portfolio__btn Посмотреть все услуги
-          .portfolio__item 
+          //.portfolio__item 
             img(src="img/crystal.png" alt="Дизайн Стразы").portfolio__img
             .portfolio__info 
               h3.portfolio__title Дизайн “Стразы”
@@ -41,7 +43,7 @@ mixin portfolio(modifier)
               .portfolio__buttons
                 button(type="button").portfolio__btn Хочу себе такой
                 button(type="button").portfolio__btn Посмотреть все услуги
-          .portfolio__item 
+          //.portfolio__item 
             img(src="img/scotch.png" alt="Дизайн Фольга-скотч").portfolio__img
             .portfolio__info 
               h3.portfolio__title Дизайн “Фольга-скотч”
@@ -49,7 +51,7 @@ mixin portfolio(modifier)
               .portfolio__buttons
                 button(type="button").portfolio__btn Хочу себе такой
                 button(type="button").portfolio__btn Посмотреть все услуги
-          .portfolio__item 
+          //.portfolio__item 
             img(src="img/grout.png" alt="Дизайн Затирка").portfolio__img
             .portfolio__info 
               h3.portfolio__title Дизайн “Затирка”
