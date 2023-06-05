@@ -59,8 +59,8 @@
         font-family: 'Amatic SC';
         font-style: normal;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: px-to-em(24);
+        line-height: 125%;
         border-radius: 30px;
         color: #2E1E25;
         margin-bottom: 73px;
@@ -72,18 +72,126 @@
         justify-content: space-between;
         margin-left: 100px;
         text-align: center;
-        
+        gap: 0 80px;
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 10px 0;
     }
 
     &__text {
-        width: 50%;
+        width: 90%;
+        font-family: 'Lato', sans-serif;
+        font-size: px-to-em(16);
+        line-height: 118%;
+        text-align: center;
+        color: #2E1E25;
+        min-height: 80px;
     }
+
+    @media screen and (max-width: 1000px) {
+        padding: 150px 0 220px 10px;
+        &__title {
+           font-size: px-to-em(40);
+        }
+
+        &__plus {
+            gap: 0 50px;
+            margin-left: 70px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 120px;
+        &__title {
+            font-size: px-to-em(32);
+        }
+
+        &__name,
+        &__phone {
+            font-size: px-to-em(12);
+            
+        }
+
+        &__name {
+            margin-bottom: 20px;
+        }
+    
+        &__phone {
+            margin-bottom: 35px;
+        }
+    
+
+        &__item {
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &__text {
+            font-size: px-to-em(13);
+        }
+
+        &__plus {
+            gap: 0 40px;
+            margin-left: 60px;
+        }
+
+        &__btn {
+            width: 120px;
+            height: 25px;
+            font-size: px-to-em(18);
+            margin-bottom: 53px;
+        }
+    }
+
+    @media screen and (max-width: 645px) {
+        &__plus {
+            margin-left: 40px;
+        }
+    }
+
+    @media screen and (max-width: 535px) {
+        &__plus {
+            margin-left: 30px;
+            gap: 0 30px;
+        }
+
+        &__text {
+            font-size: px-to-em(10);
+        }
+
+        &__item {
+            svg {
+                width: 37px;
+                height: 37px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        &__plus {
+            margin-left: 20px;
+            gap: 0 20px;
+        }
+
+        &__text {
+            font-size: px-to-em(8.5);
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        &__plus {
+            margin-left: 10px;
+            gap: 0 10px;
+        }
+    }
+
+
   
 }
