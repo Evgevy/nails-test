@@ -24,6 +24,11 @@ mixin contacts(modifier)
           p.contacts__text Так же со мной можно связаться через:
           a(href="#!" target='_blank').contacts__link-vk Вконтакте
             include img/vk.svg
+          .contacts__icons.contacts__icons--three
+            a(href="#!" target='_blank').contacts__link-icon
+              include img/vk-one.svg
+            a(href="#!" target='_blank').contacts__link-inst Вконтакте
+            a(href="mailto:inst.com" target='_blank').contacts__email www.VK.com
         .contacts__more 
           h2.contacts__title А  нахожусь я здесь
           p.contacts__text С-Петербург, ул. Невский проспект 14

@@ -80,6 +80,10 @@
             align-items: center;
             padding: 0;
         }
+
+        &--three {
+            display: none;
+        }
     }
     
     &__link-icon,
@@ -128,6 +132,8 @@
         padding-left: 10px;
         margin-top: 30px;
     }
+
+    
 
     @media screen and (max-width: 1000px) {
         &__title {
@@ -309,6 +315,33 @@
             width: 25px;
             height: 25px;
         }
+
+        &__text:nth-last-child(3) {
+            display: none;
+        }
+
+        &__link-vk {
+            display: none;
+        }
+
+        &__icons {
+            &--three {
+                display: grid;
+                grid-template-columns: 1fr 1fr 2fr;
+                border: none;
+                padding: 0;
+                margin: 40px 0;
+                gap: 0;
+                align-items: center;
+                svg {
+                    path {
+                        fill: #2E1E25;
+                    }
+                }
+            }
+        }
+
+        
     }
 
     @media screen and (max-width: 360px) {
