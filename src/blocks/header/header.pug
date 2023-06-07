@@ -1,6 +1,6 @@
 mixin header(modifier)
   header.header&attributes(attributes)
-    .header__content 
+    .header__content
       .header__burger 
         include img/burger.svg
       .header__nav 
@@ -8,13 +8,13 @@ mixin header(modifier)
           li.header__item 
             a(href="#!").header__link Главная
           li.header__item 
-            a(href="#!").header__link Обо мне
+            a(href="#about").header__link Обо мне
           li.header__item 
-            a(href="#!").header__link Услуги
+            a(href="#services").header__link Услуги
           li.header__item 
             a(href="#!").header__link Портфолио
           li.header__item
-            a(href="#!").header__link Контакты
+            a(href="#contacts").header__link Контакты
         .header__contact 
           include img/phone.svg
           a(href='tel:+89999999999' target='_blank').header__phone 8-999-999-99-99
