@@ -18,6 +18,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        
     }
 
     &__title {
@@ -41,6 +42,17 @@
     &__social {
         padding-top: 66px;
         display: flex;
+        &--two {
+            margin-bottom: 60px;
+        }
+    }
+
+    
+
+    &__social {
+        &--three {
+            display: none;
+        }
     }
 
     &__icons,
@@ -71,39 +83,12 @@
         padding: 0 15px;
     }
 
-    &__icons {
-        &--two {
-            border: none;
-            flex-direction: row;
-            margin: 85px 0;
-            justify-content: start;
-            align-items: center;
-            padding: 0;
-        }
-
-        &--three {
-            display: none;
-        }
-    }
-    
-    &__link-icon,
     &__link-inst {
-        border-right: 2px dashed #2E1E25;
+        padding-right: 5px;
     }
 
-    &__link-icon {
-        padding-right: 20px;
-    }
-
-    &__link-inst,
     &__email {
-        padding: 0 20px;
-    }
-
-    &__link-inst {
-        min-height: 50px;
-        display: block;
-        padding-top: 10px;
+        padding-right: 40px;
     }
 
     &__link-vk {
@@ -129,7 +114,6 @@
     }
 
     &__img {
-        padding-left: 10px;
         margin-top: 30px;
     }
 
@@ -183,7 +167,6 @@
         }
         &__inner {
             flex-direction: column;
-            //align-items: center;
             gap: 40px 0;
         }
 
@@ -194,6 +177,9 @@
         &__social {
             display: grid;
             grid-template-columns: 1fr 1fr 2fr;
+            &--three {
+                display: none;
+            }
         }
 
         &__more {
@@ -201,8 +187,8 @@
         }
 
         &__icons {
+            align-items: center;
             flex-direction: row;
-            //align-self: center;
             gap: 0 10px;
             border-right: 0px dashed #2E1E25;
             border-left: 2px dashed #2E1E25;
@@ -223,39 +209,6 @@
             justify-self: end;
             padding: 0;
             font-weight: 900;
-        }
-
-        &__icons {
-            &--two {
-                display: grid;
-                grid-template-columns: 1fr 1fr 2fr;
-                //align-items: center;
-                border: none;
-                padding: 0;
-                margin: 40px 0;
-                gap: 0;
-                
-            }
-        }
-
-        &__link-icon {
-            padding: 10px;
-            border-right: 0px dashed #2E1E25;
-            border-left: 2px dashed #2E1E25;
-            border-top: 2px dashed #2E1E25;
-            border-bottom: 2px dashed #2E1E25;
-            
-        }
-
-        &__link-inst {
-            padding: 24px 10px 24px 10px;
-            border-right: 2px dashed #2E1E25;
-            border-top: 2px dashed #2E1E25;
-            border-bottom: 2px dashed #2E1E25;
-            //margin-left: -10px;
-            //justify-self: start;
-            //align-self: start;
-            
         }
 
         &__email {
@@ -307,13 +260,28 @@
           font-size: px-to-em(14);
         }
 
+        &__social {
+            &--three {
+                display: grid;
+            }
+
+            &--two {
+                margin-bottom: 0;
+            }
+        }
+
         &__link-inst {
-           padding: 15.5px 10px;
+           padding: 15px 0;
         }
 
         svg {
             width: 25px;
             height: 25px;
+            path {
+                fill: #2E1E25;
+            }
+
+            
         }
 
         &__text:nth-last-child(3) {
@@ -323,25 +291,6 @@
         &__link-vk {
             display: none;
         }
-
-        &__icons {
-            &--three {
-                display: grid;
-                grid-template-columns: 1fr 1fr 2fr;
-                border: none;
-                padding: 0;
-                margin: 40px 0;
-                gap: 0;
-                align-items: center;
-                svg {
-                    path {
-                        fill: #2E1E25;
-                    }
-                }
-            }
-        }
-
-        
     }
 
     @media screen and (max-width: 360px) {
@@ -352,7 +301,7 @@
         }
 
         &__link-inst {
-            padding: 16px 10px;
+            padding: 18px 10px;
         }
     }
 
