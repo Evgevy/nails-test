@@ -89,17 +89,11 @@
         padding: 0 20px;
     }
 
-    &__btn::after {
-        content: url(../img/heart.svg);
-    }
-
     &__btn:last-child {
         background-color: #E9B8D7;
     }
 
-    &__btn:last-child::after {
-        content: url(../img/vector.svg);
-    }
+   
 
     &__buttons-tabs {
         position: absolute;
@@ -112,6 +106,111 @@
         height: 12px;
         background-color: #000;
         border-radius: 3px;
+    }
+
+    &__prev {
+        display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .title {
+            font-size: px-to-em(40);
+        }
+
+        &__title {
+            font-size: px-to-em(40);
+        }
+
+        &__text {
+           font-size: px-to-em(18);
+           margin-bottom: 20px;
+        }
+
+        &__btn {
+            max-width: 266px;
+            height: 43px;
+            width: 100%;
+            border-radius: 40px;
+            background-color: #F6ACCB;
+            font-family: 'Amatic SC';
+            font-weight: 700;
+            font-size: px-to-em(25);
+            line-height: 97%;
+            color: #2E1E25;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+    }
+
+    @media screen and (max-width: 855px) {
+        &__btn {
+            max-width: 260px;
+            height: 43px;
+            width: 100%;
+            border-radius: 40px;
+            background-color: #F6ACCB;
+            font-family: 'Amatic SC';
+            font-weight: 700;
+            font-size: px-to-em(24);
+            line-height: 97%;
+            color: #2E1E25;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &__btn:last-child {
+            svg {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        
+
+        &__pull {
+            display: none;
+            &--open {
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        &__slider-buttons  {
+            display: none;
+        }
+
+        &__info {
+            display: none;
+        }
+
+        &__prev {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            svg {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+       
+       
     }
 
     

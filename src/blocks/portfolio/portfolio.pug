@@ -9,7 +9,10 @@ mixin portfolio(modifier)
           button(type="button").portfolio__button-next
             include img/next.svg
         .portfolio__items 
-          .portfolio__item 
+          .portfolio__item
+            .portfolio__prev
+              h3.foto__title-big Дизайн “Стемпинг”
+              include img/arrow-down.svg   
             .portfolio__pull
               +foto
             .portfolio__info 
@@ -17,16 +20,23 @@ mixin portfolio(modifier)
               p.portfolio__text Техника декорирования ногтей, при которой рисунок отпечатывается со специальной пластины на ноготки при помощи штампа.
               .portfolio__buttons
                 button(type="button").portfolio__btn Хочу себе такой
+                  include img/heart.svg
                 button(type="button").portfolio__btn Посмотреть все услуги
+                  include img/vector.svg
           .portfolio__item 
+            .portfolio__prev
+              h3.foto__title-big Дизайн “Рисунок”
+              include img/arrow-down.svg   
             .portfolio__pull
-              +foto
+              +foto1
             .portfolio__info 
               h3.portfolio__title Дизайн “Рисунок”
               p.portfolio__text Продолжает набирать популярность, многие модницы отдают ему предпочтение
               .portfolio__buttons
                 button(type="button").portfolio__btn Хочу себе такой
+                  include img/heart.svg
                 button(type="button").portfolio__btn Посмотреть все услуги
+                  include img/vector.svg
           //.portfolio__item 
             img(src="img/slider.png" alt="Дизайн Слайдеры").portfolio__img
             .portfolio__info 

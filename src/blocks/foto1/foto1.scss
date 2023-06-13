@@ -1,17 +1,12 @@
-.foto {
-    
+.foto1 {
+
     &__content {
         max-width: 730px;
         width: 100%;
         margin: auto 0;
-       
     }
 
-    &__item {
-        position: relative;
-       
-    }
-
+    
     
 
     .slick-dots {
@@ -47,12 +42,23 @@
         position: absolute;
         left: 0;
         top: 0;
-        opacity: 1;
     }
 
-    
+    &__prev {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
 
-    
+   
 
     &__prev {
         &--open {
@@ -64,5 +70,5 @@
 
    
 
-
+  
 }

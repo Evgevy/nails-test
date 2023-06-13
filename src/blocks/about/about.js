@@ -21,18 +21,7 @@ for (let item of prodBtn) {
     })
 }
 
-/*for (let item of prodBtn) {
 
-    item.addEventListener('click', function() {
-
-        for (let element of tabsBox) {
-            element.classList.remove('about__box--active')
-        }
-
-        const cont = document.querySelector('#' + item.dataset.tab);
-        cont.classList.add('about__box--active')
-    })
-}*/
 
 document.addEventListener('DOMContentLoaded', () => {
 

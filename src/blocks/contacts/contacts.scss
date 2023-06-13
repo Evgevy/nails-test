@@ -5,7 +5,7 @@
     background-position: top;
     padding-bottom: 300px;
     padding-top: 741px;
-    margin-top: -750px;
+    margin-top: -500px;
     padding-left: 10px;
     &__content {
         max-width: 1220px;
@@ -120,7 +120,7 @@
     
 
     @media screen and (max-width: 1000px) {
-        margin-top: -800px;
+        margin-top: -500px;
         &__title {
             font-size: px-to-em(40);
         }
@@ -163,6 +163,7 @@
     }
 
     @media screen and (max-width: 768px) {
+        padding-top: 650px;
         &__content {
             padding-left: 20px;
         }
