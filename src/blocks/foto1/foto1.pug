@@ -1,21 +1,24 @@
 mixin foto1(modifier)
   .foto1&attributes(attributes)
-     .foto1__content=foto1 
-      .foto1__slider 
-        .foto1__items 
-          .foto1__item 
-            img(src="img/foto4.png" alt="Фото1").foto1__img
+    .foto1__content=foto1 
+      .foto1__slider.swiper-container
+        .foto1__items.swiper-wrapper
+          .foto1__item.swiper-slide 
+            img(src="img/foto3.png" alt="Фото1").foto1__img
             .foto1__slide-content
               h3.foto1__title-slide Дизайн “Рисунок”
-          .foto1__item 
-            img(src="img/foto3.png" alt="Фото2").foto1__img
+          .foto1__item.swiper-slide
+            img(src="img/foto4.png" alt="Фото2").foto1__img
             .foto1__slide-content
               h3.foto1__title-slide Дизайн “Рисунок”
-          .foto1__item 
-            img(src="img/foto4.png" alt="Фото3").foto1__img
+          .foto1__item.swiper-slide 
+            img(src="img/foto3.png" alt="Фото3").foto1__img
             .foto1__slide-content
               h3.foto1__title-slide Дизайн “Рисунок”
-          .foto1__item 
-            img(src="img/foto3.png" alt="Фото4").foto1__img
+          .foto1__item.swiper-slide 
+            img(src="img/foto4.png" alt="Фото4").foto1__img
             .foto1__slide-content
               h3.foto1__title-slide Дизайн “Рисунок”
+        .foto1__arrow.swiper-button-next
+        .foto1__arrow.swiper-button-prev
+        .foto1__pagination.swiper-pagination

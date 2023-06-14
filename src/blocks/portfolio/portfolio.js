@@ -18,6 +18,8 @@ $(document).ready(function(){
 
 
 
+
+
 $(document).ready(function(){
     $(".portfolio__prev").click(function(){
         if ($(this).siblings(".portfolio__pull").hasClass("portfolio__pull--open")){

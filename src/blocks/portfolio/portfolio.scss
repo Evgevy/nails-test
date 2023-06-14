@@ -94,23 +94,12 @@
     }
 
    
-
-    &__buttons-tabs {
-        position: absolute;
-        display: flex;
-        gap: 0 10px;
-    }
-
-    &__btn-tab {
-        width: 60px;
-        height: 12px;
-        background-color: #000;
-        border-radius: 3px;
-    }
-
     &__prev {
         display: none;
     }
+
+
+   
 
     @media screen and (max-width: 1000px) {
         .title {
@@ -176,7 +165,6 @@
     }
 
     @media screen and (max-width: 768px) {
-        
 
         &__pull {
             display: none;
@@ -186,7 +174,7 @@
                 margin: 0 auto;
             }
         }
-
+        
         &__slider-buttons  {
             display: none;
         }
@@ -206,8 +194,18 @@
             svg {
                 width: 25px;
                 height: 25px;
+                transition: .1s;
+            }
+            &--open {
+                svg {
+                    transform: rotate(180deg);
+                }
             }
         }
+
+       
+
+        
 
        
        

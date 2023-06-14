@@ -11,9 +11,9 @@ mixin portfolio(modifier)
         .portfolio__items 
           .portfolio__item
             .portfolio__prev
-              h3.foto__title-big Дизайн “Стемпинг”
-              include img/arrow-down.svg   
-            .portfolio__pull
+              h3.foto__title Дизайн “Стемпинг”
+              include img/arrow-down.svg 
+            .portfolio__pull  
               +foto
             .portfolio__info 
               h3.portfolio__title Дизайн “Стемпинг”
@@ -37,6 +37,7 @@ mixin portfolio(modifier)
                   include img/heart.svg
                 button(type="button").portfolio__btn Посмотреть все услуги
                   include img/vector.svg
+  
           //.portfolio__item 
             img(src="img/slider.png" alt="Дизайн Слайдеры").portfolio__img
             .portfolio__info 
