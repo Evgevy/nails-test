@@ -1,0 +1,24 @@
+mixin foto3(modifier)
+  .foto3&attributes(attributes)
+    .foto3__content=foto3 
+      .foto3__slider.swiper-container
+        .foto3__items.swiper-wrapper
+          .foto3__item.swiper-slide 
+            img(src="img/crystal.png" alt="Фото1").foto3__img
+            .foto3__slide-content
+              h3.foto3__title-slide Дизайн “Стразы”
+              p.foto3__text Прекрасно дополнят слайдеры для дизайна ногтей, блестки, камни для ногтей
+              .foto3__buttons 
+                button(type="button").foto3__btn Записаться
+                  include img/btn.svg
+                button(type="button").foto3__btn Все услуги
+                  include img/btn.svg
+          .foto3__item.swiper-slide
+            img(src="img/stemp.png" alt="Фото2").foto3__img
+          .foto3__item.swiper-slide 
+            img(src="img/crystal.png" alt="Фото3").foto3__img
+          .foto3__item.swiper-slide 
+            img(src="img/stemp.png" alt="Фото4").foto3__img
+        .foto3__arrow.swiper-button-next
+        .foto3__arrow.swiper-button-prev
+        .foto3__pagination.swiper-pagination

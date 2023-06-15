@@ -162,6 +162,14 @@
                 height: 14px;
             }
         }
+
+        .slick-slide  {
+           gap: 0 20px;
+        }
+
+        &__pull {
+            margin-top: 50px;
+        }
     }
 
     @media screen and (max-width: 768px) {
@@ -173,7 +181,27 @@
                 width: 90%;
                 margin: 0 auto;
             }
+            .foto,
+            .foto1,
+            .foto2,
+            .foto3,
+            .foto4,
+            .foto5 {
+                .swiper-pagination {
+                    position: relative;
+                    margin-bottom: 30px;
+                }
+                .swiper-pagination-bullet {
+                    background: #212121;
+                }
+                &__img {
+                    margin-bottom: 20px;
+                }
+            }
+            
         }
+
+       
         
         &__slider-buttons  {
             display: none;
@@ -183,14 +211,18 @@
             display: none;
         }
 
+        &__item {
+            border: 1px solid #000000;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
         &__prev {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid #000000;
-            border-radius: 10px;
-            padding: 10px;
-            margin-bottom: 20px;
+            margin: 5px;
             svg {
                 width: 25px;
                 height: 25px;
@@ -203,12 +235,56 @@
             }
         }
 
-       
+        &__title-foto {
+            font-family: 'Amatic SC';
+            font-weight: 700;
+            font-size: px-to-em(25);
+            line-height: 125%;
+            color: #4B2B45;
+        }
+    }
 
-        
+    @media screen and (max-width: 570px) {
+        .foto,
+        .foto1,
+        .foto2,
+        .foto3,
+        .foto4,
+        .foto5 {
+            .swiper-pagination-bullet {
+                width: 22px;
+                height: 9px;
+                opacity: 0.5;
+                border-radius: 3px;
+            }
+    
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+            }
 
-       
-       
+        }
+
+        &__prev {
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+
+        &__title-foto {
+           font-size: px-to-em(20);
+        }
+
+        &__pull {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        &__item {
+            padding: 5px;
+        }
     }
 
     

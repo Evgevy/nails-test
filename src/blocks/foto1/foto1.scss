@@ -1,7 +1,6 @@
 .foto1 {
     min-width: 0;
     &__content {
-        //max-width: 730px;
         width: 100%;
         margin: auto 0;
     }
@@ -10,14 +9,6 @@
         overflow: hidden;
         position: relative;
     }
-
-    
-
-   
-
-   
-
-    
 
     .swiper-pagination {
         display: flex;
@@ -32,7 +23,7 @@
         font-size: 0px;
         width: 60px;
         height: 12px;
-        background: #FFFFFF;
+        background: #ffffff;
         opacity: 0.5;
         border-radius: 3px;
     }
@@ -41,54 +32,149 @@
         opacity: 1;
     }
 
-    &__slide-content {
-        font-family: 'Amatic SC';
-        font-weight: 700;
-        font-size: px-to-em(30);
-        line-height: 126%;
-        color: red;
-        margin-bottom: 40px;
-        position: absolute;
-        left: 0;
-        right: 450px;
-        top: 150px;
-        opacity: 1;
-    }
-
     &__arrow {
         display: none;
     }
 
-    &__box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid #000000;
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 20px;
-        margin-top: 50px;
-        
-        svg {
-            width: 25px;
-            height: 25px;
-        }
-        
+    &__slide-content {
+        display: none;
     }
 
-    
 
+    @media screen and (max-width: 768px) {
+        &__slide-content {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 70px;
+            bottom: 130px;
+            opacity: 1;
+            width: 100%;
+            text-align: center;
+            padding: 0 20px;
+        }
     
-
+        &__title-slide {
+            font-family: 'Amatic SC';
+            font-weight: 700;
+            font-size: px-to-em(30);
+            line-height: 126%;
+            color: #000000;
+        }
     
-
-    /*&__prev {
-        &--open {
+        &__text {
+            font-family: 'Lato', sans-serif;
+            font-size: px-to-em(15);
+            font-weight: 700;
+            line-height: 108%;
+            color: #212121;
+            margin: 30px 0;
+        }
+    
+        &__img {
+            opacity: 0.5;
+        }
+    
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px 0;
+            
+        }
+    
+        &__btn {
+            max-width: 150px;
+            height: 25px;
+            width: 100%;
+            font-family: 'Amatic SC';
+            font-weight: 700;
+            font-size: px-to-em(15);
+            line-height: 118%;
+            color: #212121;
+            background: #D9D9D9;
+            border: 0.375px solid #212121;
+            box-shadow: -0.75px -0.75px 5.625px #000000;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
             svg {
-                transform: rotate(180deg);
+                width: 10px;
+                height: 10px;
             }
         }
-    }*/
+
+    }
+
+    @media screen and (max-width: 570px) {
+        &__title-slide {
+          font-size: px-to-em(25);
+            
+        }
+
+        &__text {
+           font-size: px-to-em(13);
+        }
+
+        &__slide-content {
+            top: 50px;
+            bottom: 130px;
+        }
+
+        &__btn {
+            max-width: 90px;
+            height: 20px;
+            width: 100%;
+            font-size: px-to-em(12);
+            padding: 10px;
+            svg {
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 435px) {
+        &__title-slide {
+            font-size: px-to-em(20);
+        }
+
+        &__text {
+            font-size: px-to-em(12);
+            margin: 20px 0;
+        }
+
+        &__slide-content {
+            top: 20px;
+            bottom: 130px;
+        }
+
+        &__btn {
+            max-width: 90px;
+            height: 20px;
+            width: 100%;
+            font-size: px-to-em(10.5);
+            padding: 5px;
+            svg {
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        &__text {
+            font-size: px-to-em(11);
+            margin: 10px 0;
+        }
+    }
+    
+
+    
+
+   
 
    
 

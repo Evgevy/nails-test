@@ -1,0 +1,24 @@
+mixin foto2(modifier)
+  .foto2&attributes(attributes)
+    .foto2__content=foto2 
+      .foto2__slider.swiper-container
+        .foto2__items.swiper-wrapper
+          .foto2__item.swiper-slide 
+            img(src="img/draft.png" alt="Фото1").foto2__img
+            .foto2__slide-content
+              h3.foto2__title-slide Дизайн “Слайдеры”
+              p.foto2__text Наклейки на водной основе, что легко переносятся на ноготь
+              .foto2__buttons 
+                button(type="button").foto2__btn Записаться
+                  include img/btn.svg
+                button(type="button").foto2__btn Все услуги
+                  include img/btn.svg
+          .foto2__item.swiper-slide
+            img(src="img/grout.png" alt="Фото2").foto2__img
+          .foto2__item.swiper-slide 
+            img(src="img/draft.png" alt="Фото3").foto2__img
+          .foto2__item.swiper-slide 
+            img(src="img/grout.png" alt="Фото4").foto2__img
+        .foto2__arrow.swiper-button-next
+        .foto2__arrow.swiper-button-prev
+        .foto2__pagination.swiper-pagination

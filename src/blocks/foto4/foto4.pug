@@ -1,0 +1,24 @@
+mixin foto4(modifier)
+  .foto4&attributes(attributes)
+    .foto4__content=foto4
+      .foto4__slider.swiper-container
+        .foto4__items.swiper-wrapper
+          .foto4__item.swiper-slide 
+            img(src="img/scotch.png" alt="Фото1").foto4__img
+            .foto4__slide-content
+              h3.foto4__title-slide  Дизайн “Фольга-скотч”
+              p.foto4__text Представляет собой узкую ленту, которой легко придать нужную форму и просто клеить на ногти не только как дизайн, но и в качестве трафарета
+              .foto4__buttons 
+                button(type="button").foto4__btn Записаться
+                  include img/btn.svg
+                button(type="button").foto4__btn Все услуги
+                  include img/btn.svg
+          .foto4__item.swiper-slide
+            img(src="img/scotch.png" alt="Фото2").foto4__img
+          .foto4__item.swiper-slide 
+            img(src="img/scotch.png" alt="Фото3").foto4__img
+          .foto4__item.swiper-slide 
+            img(src="img/scotch.png" alt="Фото4").foto4__img
+        .foto4__arrow.swiper-button-next
+        .foto4__arrow.swiper-button-prev
+        .foto4__pagination.swiper-pagination
