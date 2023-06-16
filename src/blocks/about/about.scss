@@ -139,6 +139,17 @@
         margin-bottom: 0;
     }
 
+    &__link:hover {
+        transition: .1s;
+        background: #F6ACCB;
+        color: #ffffff;
+        svg {
+            path {
+                fill: #ffffff;
+            }
+        }
+    }
+
     &__list {
         list-style: disc;
         display: flex;
@@ -190,14 +201,25 @@
         width: 100%;
     }
 
-    &__button::after,
-    &__button-big::after {
-        content: url(../img/vector.svg);
-    }
-
+   
     &__img-big {
         margin-top: 22px;
     }
+
+    &__button:hover,
+    &__button-big:hover {
+        background: #2E1E25;
+        color: #ffffff;
+        svg {
+            transition: .3s;
+            transform: rotate(45deg);
+            path {
+                fill: #ffffff;
+            }
+        }
+    }
+
+   
 
     &__link-mobile {
         display: none;

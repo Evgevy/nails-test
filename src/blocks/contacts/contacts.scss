@@ -83,6 +83,31 @@
         padding: 0 15px;
     }
 
+    &__icon:first-child:hover {
+        svg {
+            path {
+                fill:rgb(29, 228, 228);
+            }
+        }
+    }
+
+    &__icon-inst:hover {
+        svg {
+            path {
+                fill:rgb(228, 29, 185);
+            }
+        }
+
+    }
+
+    &__icon:last-child:hover {
+        svg {
+            path {
+                fill: green;
+            }
+        }
+    }
+
     &__link-inst {
         padding-right: 5px;
     }
@@ -105,6 +130,12 @@
         justify-content: space-between;
         padding: 0 20px;
         color: #EEEEEE;
+    }
+
+    &__link-vk:hover {
+        transition: .2s;
+        background: rgba(46, 30, 37);
+        transform: scale(1.1);
     }
 
     &__more {

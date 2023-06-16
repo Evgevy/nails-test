@@ -93,6 +93,27 @@
         background-color: #E9B8D7;
     }
 
+    &__btn:hover {
+        color: #ffffff;
+        transition: .1s;
+        transform: scale(1.05);
+        svg {
+            path {
+                fill: red;
+            }
+        }
+    }
+
+    &__btn:last-child:hover {
+        svg {
+            transition: .3s;
+            transform: rotate(45deg);
+            path {
+                fill: #ffffff;
+            }
+        }
+    }
+
    
     &__prev {
         display: none;

@@ -30,6 +30,37 @@
         opacity: 0.7;
     }
 
+    &__link:hover {
+        transition: .1s;
+        font-weight: 700;
+        opacity: 1;
+    }
+
+    &__item:hover {
+        transform: scale(1.2);
+    }
+
+    &__icon:first-child:hover {
+        transition: .2s;
+        transform: scale(1.1);
+        svg {
+            path {
+                fill: rgb(228, 29, 185);
+            }
+        }
+    }
+
+    &__icon:last-child:hover {
+        transition: .2s;
+        transform: scale(1.1);
+        svg {
+            path {
+                fill:rgb(15, 11, 215);
+            }
+        }
+
+    }
+
     &__title {
         font-family: 'Amatic SC';
         font-weight: 700;
@@ -56,6 +87,12 @@
         line-height: 126%;
         color: #FFFFFF;
         margin-bottom: 40px;
+    }
+
+    &__btn:hover {
+        transition: .2s;
+        color: #2E1E25;
+        background: #ffffff;
     }
 
     &__social {

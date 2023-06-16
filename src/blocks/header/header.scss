@@ -35,6 +35,12 @@
         color: #2E1E25;
     }
 
+    &__item:hover {
+        transition: .1s;
+        transform: scale(1.1);
+        font-weight: 700;
+    }
+
     &__contact {
         display: flex;
         gap: 0 16px;

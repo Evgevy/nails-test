@@ -7,9 +7,9 @@ mixin contacts(modifier)
           p.contacts__text Напишите мне и я обязательно отвечу 
           .contacts__social
             .contacts__icons
-              a(href="#!" target='_blank') 
+              a(href="#!" target='_blank').contacts__icon 
                 include img/telega.svg
-              a(href="#!" target='_blank')
+              a(href="#!" target='_blank').contacts__icon 
                 include img/whatsapp.svg 
             .contacts__names 
               a(href="#!" target='_blank').contacts__link Telegram
@@ -18,7 +18,7 @@ mixin contacts(modifier)
               a(href='tel:+89999999999' target='_blank').contacts__phone 8-999-999-99-99
           .contacts__social.contacts__social--two
             .contacts__icons
-              a(href="#!" target='_blank')
+              a(href="#!" target='_blank').contacts__icon-inst
                 include img/inst.svg
             .contacts__names  
               a(href="#!" target='_blank').contacts__link-inst Instagram
