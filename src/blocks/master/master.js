@@ -9,5 +9,6 @@ $(document).ready(function(){
         infinite: true,
         dots: true,
         arrows: false,
+        
     })
 })

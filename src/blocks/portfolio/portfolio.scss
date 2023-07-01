@@ -1,5 +1,6 @@
 .portfolio {
     padding-left: 10px;
+    margin-bottom: 200px;
     &__content {
         max-width: 1220px;
         width: 100%;
@@ -194,7 +195,7 @@
     }
 
     @media screen and (max-width: 768px) {
-
+        margin-bottom: 150px;
         &__pull {
             display: none;
             &--open {
