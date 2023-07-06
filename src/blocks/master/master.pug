@@ -11,20 +11,21 @@ mixin master(modifier)
         p.master__text мастер маникюра
         button.master__btn Записаться
           include img/btn.svg
-      .master__slider 
-        .master__items 
-          .master__item 
+      .master__slider.swiper-container  
+        .master__items.swiper-wrapper  
+          .master__item.swiper-slide 
             h2.master__caption Комплексный маникюр
             img(src="img/slide1.png" alt="Комплексный маникюр").master__img
-          .master__item 
+          .master__item.swiper-slide 
             h2.master__caption Снятие/покрытие
             img(src="img/slide1.png" alt="Комплексный маникюр").master__img
-          .master__item 
+          .master__item.swiper-slide 
             h2.master__caption Дизайн
             img(src="img/slide1.png" alt="Комплексный маникюр").master__img
-          .master__item 
+          .master__item.swiper-slide
             h2.master__caption Выгодное предложение
             img(src="img/slide1.png" alt="Комплексный маникюр").master__img
-          .master__item 
+          .master__item.swiper-slide 
             h2.master__caption Портфолио
             img(src="img/slide1.png" alt="Комплексный маникюр").master__img
+        .master__pagination.swiper-pagination
